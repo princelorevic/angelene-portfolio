@@ -26,8 +26,8 @@ const projects = [
 
 function Projects() {
   return (
-    <section>
-      <h2>Projects</h2>
+    <section className="py-16 border-t border-slate-200">
+      <h2 className="text-2xl font-semibold text-slate-900 mb-8">Projects</h2>
       {projects.map((project, index) => (
         <ProjectCard key={index} title={project.title} details={project.details} />
       ))}

@@ -14,13 +14,18 @@ const skills = [
 
 function Skills() {
   return (
-    <section>
-      <h2>Core Skills</h2>
-      <ul>
+    <section className="py-16 border-t border-slate-200">
+      <h2 className="text-2xl font-semibold text-slate-900 mb-6">Core Skills</h2>
+      <div className="flex flex-wrap gap-3">
         {skills.map((skill, index) => (
-          <li key={index}>{skill}</li>
+          <span
+            key={index}
+            className="px-4 py-2 rounded-full border border-teal-700 text-teal-700 text-sm"
+          >
+            {skill}
+          </span>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }
